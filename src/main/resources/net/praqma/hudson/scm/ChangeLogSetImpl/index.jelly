@@ -34,7 +34,8 @@
                 <j:forEach var="file" items="${cs.affectedPaths}" varStatus="loop">
                     <tr>
                         <td width="16">
-                            <img width="16" height="16" src="/images/16x16/document_edit.png" alt="The file was modified" title="The file was modified"></img>
+                            <l:icon class="icon-notepad icon-sm"
+                                 alt="The file was modified" title="The file was modified"/>
                         </td>
                         <td>${cs.getOnlyChangedFile(file)} [${cs.getOnlyClearCaseChangedFile(file)}]</td>
                     </tr>
