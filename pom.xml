@@ -12,13 +12,13 @@
         <powermock.version>1.4.12</powermock.version>
         <jenkins.version>2.60.3</jenkins.version>
         <java.level>8</java.level>
+        <changelist>999999-SNAPSHOT</changelist>
     </properties>
 
     <artifactId>clearcase-ucm-plugin</artifactId>
-    <version>1.7.4-SNAPSHOT</version>
-    <name>ClearCase UCM Plugin!</name>
-    <description>Integrates Jenkins to ClearCase UCM</description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/ClearCase+UCM+Plugin</url>
+    <version>${changelist}</version>
+    <name>ClearCase UCM Plugin</name>
+    <url>https://plugins.jenkins.io/clearcase-ucm-plugin/</url>
     <packaging>hpi</packaging>
 
     <repositories>
@@ -120,10 +120,10 @@
      </distributionManagement>
 
     <scm>
-        <connection>scm:git:http://github.com/jenkinsci/clearcase-ucm-plugin</connection>
+        <connection>scm:git:https://github.com/jenkinsci/clearcase-ucm-plugin</connection>
         <developerConnection>scm:git:ssh://git@github.com/jenkinsci/clearcase-ucm-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/clearcase-ucm-plugin</url>
-        <tag>clearcase-ucm-plugin-1.7.2</tag>
-  </scm>
+        <tag>${scmTag}</tag>
+    </scm>
 
 </project>
